@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fundación Hambre Cero — Demo</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">FHC</div>
+        <div>
+          <div class="brand-title">Fundación Hambre Cero</div>
+          <div class="brand-sub">Alimentación • Educación • Futuro</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#mision">Misión</a>
+        <a href="#programas">Programas</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#contacto">Contacto</a>
+        <a class="cta" href="#donar">Donar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div>
+        <h1>Luchando por un futuro sin hambre</h1>
+        <p>Apoyamos a niños en situación de hambre proporcionando alimentación, educación y recursos para un desarrollo saludable.</p>
+
+        <div class="hero-buttons">
+          <a class="cta" href="#donar">Donar ahora</a>
+          <a class="secondary" href="#programas">Conoce los programas</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Años</div></div>
+          <div class="stat"><div class="stat-num">39k</div><div class="stat-label">Niños beneficiados</div></div>
+          <div class="stat"><div class="stat-num">100</div><div class="stat-label">Voluntarios</div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-card">
+       <div class="hero-card">
+  <img src="img/impacto.jpg" alt="Niños recibiendo apoyo" style="width:100%; height:100%; border-radius:14px; object-fit:cover;">
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión -->
+    <section id="mision">
+      <h2>Nuestra misión</h2>
+      <p class="section-desc">Erradicar el hambre infantil, brindando alimentación adecuada y educación para mejorar la calidad de vida de los niños en comunidades vulnerables.</p>
+    </section>
+
+    <!-- Programas -->
+    <section id="programas" class="programs">
+      <h2>Programas destacados</h2>
+      <div class="grid-3">
+        <div class="card">
+          <img src="img/foto1.jpg" alt="programa 1">
+          <h3>Comedor comunitario</h3>
+          <p>Proporcionamos comidas nutritivas diarias a niños en situación de hambre.</p>
+        </div>
+        <div class="card">
+          <img src="img/foto2.jpg" alt="programa 2">
+          <h3>Educación y talleres</h3>
+          <p>Capacitaciones y actividades educativas para promover desarrollo integral.</p>
+        </div>
+        <div class="card">
+          <img src="img/foto3.jpg" alt="programa 3">
+          <h3>Apoyo familiar</h3>
+          <p>Asistencia a familias para mejorar nutrición, salud y bienestar general.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Noticias desde API -->
+    <section id="impacto">
+      <h2>Noticias y novedades</h2>
+      <p class="section-desc">Últimas entradas sobre nuestros programas y resultados, generadas desde una API REST (demo).</p>
+
+      <div id="news" class="news-list">
+        <div class="card">Cargando noticias...</div>
+      </div>
+    </section>
+
+    <!-- Voluntarios desde API -->
+    <section id="voluntarios">
+      <h2>Voluntarios y testimonios</h2>
+      <p class="section-desc">Perfiles de ejemplo de personas que apoyan nuestra causa, suministrados por una API pública.</p>
+
+      <div id="vols" class="vol-grid">
+        <div class="card">Cargando perfiles...</div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="contact-box card">
+        <div class="contact-info">
+          <p>📍 Ciudad de México, México<br>✉️ hola@fundacionhambrecero.org<br>📞 +52 55 4912 2422</p>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input name="name" placeholder="Nombre" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea name="message" rows="4" placeholder="Mensaje"></textarea>
+          <div class="form-actions">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div>Fundación Hambre Cero, Daniela Villalobos, Omar Guasso, Marijose Lambarri, Leonardo Azcona, Diego Irigoyen • © <span id="year"></span></div>
+    <div class="footer-links">Política de privacidad · Términos</div>
+  </footer>
+
+  <!-- JS externo -->
+  <script src="js/script.js"></script>
+</body>
+</html>
